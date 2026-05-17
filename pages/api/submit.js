@@ -46,7 +46,13 @@ export default async function handler(req, res) {
 
   if (dbError) {
     console.error('Erreur Supabase:', dbError)
-    return res.status(500).json({ success: false, error: 'Erreur lors de l\'enregistrement.' })
+    return res.status(500).json({ 
+      success: false, 
+      error: 'Erreur lors de l\'enregistrement.',
+      detail: dbError.message,
+      code: dbError.code,
+      hint: dbError.hint
+    })
   }
 
   // === ENVOI EMAIL (Resend remplace PHPMailer) ===
