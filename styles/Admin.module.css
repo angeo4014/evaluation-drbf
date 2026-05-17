@@ -1,0 +1,200 @@
+.dashboard {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboardHeader {
+  background: linear-gradient(135deg, #FF8C00 0%, #E67300 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.dashboardHeader h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.dashboardHeader p {
+  font-size: 16px;
+  opacity: 0.95;
+  margin: 5px 0;
+}
+
+.refreshBtn {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: 2px solid rgba(255,255,255,0.5);
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 15px;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.refreshBtn:hover:not(:disabled) {
+  background: rgba(255,255,255,0.35);
+}
+
+.refreshBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.sectionTitle {
+  color: #FF8C00;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.statCard {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-left: 5px solid #FF8C00;
+}
+
+.statCard h3 {
+  color: #FF8C00;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.statRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.statRow:last-child {
+  border-bottom: none;
+}
+
+.statLabel {
+  font-weight: 600;
+  color: #333333;
+}
+
+.statValue {
+  color: #FF8C00;
+  font-weight: bold;
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background: #F5F5F5;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.progressFill {
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+.satisfactionRow {
+  margin-top: 15px;
+  border-top: 2px solid #FF8C00 !important;
+  padding-top: 15px;
+  border-bottom: none !important;
+}
+
+.satisfactionValue {
+  color: #FF8C00;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tableWrapper {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th {
+  background: #FFA726;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.table tr:hover td {
+  background: #FFF5E6;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.badgeSuccess {
+  background: #D4EDDA;
+  color: #155724;
+}
+
+.badgeWarning {
+  background: #FFF3CD;
+  color: #856404;
+}
+
+.badgeDanger {
+  background: #F8D7DA;
+  color: #721C24;
+}
+
+.exportBtn {
+  background: #FF8C00;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.exportBtn:hover {
+  background: #E67300;
+}
+
+@media print {
+  .refreshBtn, .exportBtn { display: none; }
+  .dashboardHeader { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}

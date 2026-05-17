@@ -1,0 +1,22 @@
+/* === VARIABLES CSS === */
+:root {
+  --orange-primary: #FF8C00;
+  --orange-dark: #E67300;
+  --orange-light: #FFA726;
+  --white: #FFFFFF;
+  --gray-light: #F5F5F5;
+  --gray-medium: #E0E0E0;
+  --gray-dark: #666666;
+  --text-dark: #333333;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
