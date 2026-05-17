@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dépendances
 node_modules/
 .pnp
@@ -27,3 +28,19 @@ Thumbs.db
 
 # Vercel
 .vercel
+=======
+*.tar
+*.tar.*
+*.jar
+*.exe
+*.msi
+*.deb
+*.zip
+*.tgz
+*.log
+*.log.*
+*.sig
+
+pkg/
+src/
+>>>>>>> ef081bac6898659541d5d4e233a4afb5ee5c6e5e
